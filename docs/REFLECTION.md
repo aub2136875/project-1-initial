@@ -1,3 +1,5 @@
 # Reflection Log
 
 This document captures reflections on the development of 3D geometric classes in Java, focusing on design patterns, principles, and lessons learned.
+
+For this project I looked into what a value object pattern is, and here is what I found: A value object pattern represents a value rather than a thing. A couple of things that define a value object are that they are immutable, they are compared by value rather than identity, they are "self validating" or enforce their own rules, and they don't have an identity. Because value objects are immutable, they are unable to be changed once they are created. Because they are compared by value, two objects with the same data would be considered equal. Not having an identity means that what instance it is does not matter, and only the value that it represents is important. Value objects are very common in Domain-Driven Design. Overall the key idea is that two value objects with the same data are considered equal even if they are different instances.
